@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-gray-400 text-[#5f5f5f]">
+    <!-- HEADER -->
+    <header class="h-20 bg-white">
+        <div class="flex p-5 ml-20 mr-20">
+            <!-- HEADER LOGO -->
+            <div class="header_logo w-1/4 inline-flex">
+                <img src="assets/images/logo.png" alt="" class="w-8">
+                <div class="logo_text block pt-1">
+                    <span class="ml-2">Football</span>
+                    <span class="">Predictions</span>
+                </div>   
+            </div>
+            <!-- END LOGO -->
+            <!-- HEADER MENU -->
+            <div class="header_menu w-2/4">
+                <div class="">
+                    <ul class="flex">
+                        <li class="p-1"><a href="">Home</a></li>
+                        <li class="p-1"><a href="">Predictions</a></li>
+                        <li class="p-1"><a href="">About</a></li>
+                        <li class="p-1"><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END MENU -->
+            <!-- HEADER AUTH -->
+            <div class="header_auth w-1/4">
+                Auth
+            </div>
+            <!-- END AUTH -->
+        </div>   
+    </header>
+    <!-- END HEADER -->
+
+    <main class="ml-20 mr-20">
+        <div class="content grid grid-rows-12 grid-flow-col gap-1 flex flex-row items-start p-2">
+            <!-- Left Sidebar -->
+            <div class="left_sidebar grid-rows-2 mt-1 bg-white rounded-md pt-2 pb-2">
+
+                <div class="pb-3">
+                    <div class="p-2 pl-2 pr-2  rounded-t-md">
+                        <div class="flex ml-auto mr-auto pl-4 pr-4">
+                            <img src="/assets/images/logo.png" alt="" class="w-4 h-4 mt-auto mb-auto">
+                            <span class="ml-2 text-sm font-bold mt-auto mb-auto">Popular Leagues</span> 
+                        </div>       
+                    </div>
+
+                    <ul class="ml-6 mr-6  mt-4 border-l border-r text-xs  font-bold">
+
+                        <li class="p-2 bg-white hover:bg-gray-200">
+                            <a href="" class="flex">
+                                <img class="w-5 mr-2 border-2 rounded-full border-gray-200" src="/assets/images/spain.png" alt="">La Liga
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white hover:bg-gray-200">
+                            <a href="" class="flex">
+                                <img class="w-5 mr-2 border-2 rounded-full border-gray-200" src="/assets/images/England.png" alt="">Premier league
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white hover:bg-gray-200">
+                            <a href="" class="flex">
+                                <img class="w-5 mr-2 border-2 rounded-full border-gray-200" src="/assets/images/Italy.png" alt="">Serie A
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white hover:bg-gray-200">
+                            <a href="" class="flex">
+                                <img class="w-5 mr-2 border-2 rounded-full border-gray-200" src="/assets/images/Germany.png" alt="">Bundesliga
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white hover:bg-gray-200">
+                            <a href="" class="flex">
+                                <img class="w-5 mr-2 border-2 rounded-full border-gray-200" src="/assets/images/France.png" alt="">Liga 1
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white hover:bg-gray-200">
+                            <a href="" class="flex">
+                                <img class="w-5 mr-2 border-2 rounded-full border-gray-200" src="/assets/images/uefa.png" alt="">UEFA
+                            </a>
+                        </li>
+                        <li class="p-2 bg-white hover:bg-gray-200">
+                            <a href="" class="flex">
+                                <img class="w-5 mr-2 border-2 rounded-full border-gray-200" src="/assets/images/ch.png" alt="">Champions League
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="p-2 pl-2 pr-2">
+                        <div class="flex ml-auto mr-auto pl-4 pr-4 pt-2">
+                            <img src="/assets/images/logo.png" alt="" class="w-4 h-4 mt-auto mb-auto">
+                            <span class="ml-2 text-sm font-bold mt-auto mb-auto">All Leagues</span> 
+                        </div>       
+                    </div>
+                    <ul class="countries ml-6 mr-6 border-l border-r text-xs  font-bold mt-4">
+                        <li class="bg-white  hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Albania
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>
+                        <li class="bg-white hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Algeria
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>
+                        <li class="bg-white hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Andorra
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>
+                        <li class="bg-white hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Angola
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>
+                        <li class="bg-white hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Argentina
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>
+                        <li class="bg-white hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Armenia
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>
+                        <li class="bg-white hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Australia
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>
+                        <li class="bg-white hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Austria
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>
+                        <li class="bg-white hover:bg-gray-200 ">
+                            <a href="" class="pl-4 p-2 flex justify-between">Azerbaijan
+                                <img src="/assets/images/triangle.svg" alt="" class="league_img">
+                            </a>
+                        </li>              
+                    </ul>
+                </div> 
+            </div>
+            <!-- end Left Sidebar -->
+            <!-- Main -->
+            <div class="grid grid-rows-8 ml-2 mr-2 mt-1 ">
+                <!-- Mian Banner -->
+                <div class="main_banner mb-2 rounded-md">   
+                    <img src="assets/images/bet365.gif" class="rounded-md"/>   
+                </div>
+                <!-- end Main Banner -->
+                <!-- Matches Carts -->
+                <div class="match_cart bg-white mb-2 rounded-md">
+                    <!-- Cart Header -->
+                    <div class="cart_header p-4 rounded-t-md border-b-2 flex justify-between">
+                        <div class="">
+                            <ul class="flex mt-auto mb-auto text-sm font-bold">
+                                <li class="ml-2 first:ml-0 rounded-md border pl-3 pr-3 pt-1 pb-1 mt-auto mb-auto bg-red-500 text-white"><a href="">All</a></li>
+                                <li class="ml-2 mt-auto mb-auto pl-3 pr-3 pt-1 pb-1 bg-gray-100 rounded-md hover:text-white hover:bg-gray-400 active:bg-red-500"><a href="">Live</a></li>
+                                <li class="ml-2 mt-auto mb-auto pl-3 pr-3 pt-1 pb-1 bg-gray-100 rounded-md hover:text-white hover:bg-gray-400 active:bg-red-500"><a href="">Scheduled</a></li>
+                                <li class="ml-2 mt-auto mb-auto pl-3 pr-3 pt-1 pb-1 bg-gray-100 rounded-md hover:text-white hover:bg-gray-400 active:bg-red-500"><a href="">Finished</a></li>
+                                <li class="ml-2 mt-auto mb-auto pl-3 pr-3 pt-1 pb-1 bg-gray-100 rounded-md hover:text-white hover:bg-gray-400 active:bg-red-500"><a href="">Predictions</a></li>
+                            </ul>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <!-- end Cart Header -->
+
+                    
+                    <div class="pl-4 pr-4 pb-4 pt-2 rounded-md">
+                        <!-- Cart League -->
+                        <div class="cart_league flex pl-2 pr-2 p-1 mt-2 mb-2 rounded-t-md ">
+                            <img src="assets/images/spain.png" alt="" class="w-5 mt-auto mb-auto rounded-full">
+                            <div class="cart_league__name ml-2">
+                                <div class="inline-block align-middle">
+                                    <span class="text-xs font-bold">
+                                        Spain:
+                                    </span>
+                                    <span class="text-xs font-semibold">La Liga</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Cart Leaugue -->
+
+                        <!-- league Games -->
+                        <div class="league_games_wrapper rounded-b-md p-3 border rounded-md">
+                            <!-- item 1-->
+                            <div class="league_games_item flex flex-row justify-between border-b pb-2 bg-white">
+                        
+                                <!-- Tima & Star -->
+                                <div class="w-1/6 flex flex-row">           
+                                    <div class="home_team">
+                                        <span class="star inline-block align-middle">
+                                            <img src="/assets/images/star.svg" alt="" class="align-middle inline-block">
+                                        </span>
+                                        <span class="time ml-4 inline-block align-middle pt-1 text-xs font-bold text-lime-500">48'</span>
+                                    </div>
+                                </div>
+                                <!-- End Time & Star -->
+                                <!-- Teams -->
+                                <div class="w-4/6 flex flex-row justify-between">
+                                    
+                                    <div class="home_team w-5/12">
+                                        <div class="inline-block align-middle  rounded-full  p-1">
+                                            <img src="/assets/images/barselona.png" alt="" class="w-4">
+                                        </div>
+                                        <span class="team_name ml-1 inline-block align-middle text-xs font-bold font-bold">Barselona</span>
+                                    </div>
+                                    <!-- Result -->
+                                    <div class="result  flex justify-center">
+                                        <span class="inline-block align-middle text-xs font-bold m-auto rounded-md border pl-4 pr-4 pt-1 pb-1">
+                                                2 : 4
+                                        </span>     
+                                    </div>
+                                    
+                                    <div class="away_team w-5/12 flex justify-end">
+                                        <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold font-bold">Real Madrid</span>
+                                        <div class="inline-block align-middle  rounded-full  p-1">
+                                            <img src="/assets/images/real.png" alt="" class="w-4">
+                                        </div>
+                                    </div>
+                                    </a>
+                                  
+                                </div>
+                                
+                                <!-- Stat -->
+                                <div class="statistics w-1/6 flex flex-row justify-end">
+                                    <div class="">
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="" alt="" class="">
+                                            <div class="font-bold mr-2  text-[#5f5f5f]">h2h</div>
+                                        </span>
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="/assets/images/statistics.png" alt="" class="w-3">
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                            <!-- end item -->
+                            <!-- item 2-->
+                            <div class="league_games_item flex flex-row justify-between border-b pb-2 pt-2">
+                                <!-- Tima & Star -->
+                                <div class="w-1/6 flex flex-row">           
+                                    <div class="home_team">
+                                        <span class="star inline-block align-middle">
+                                            <img src="/assets/images/star_y.svg" alt="" class="align-middle inline-block">
+                                        </span>
+                                        <span class="time ml-4 inline-block align-middle pt-1 text-xs font-bold text-red-600">83'</span>
+                                    </div>
+                                </div>
+                                <!-- End Time & Star -->
+                                <!-- Teams -->
+                                <div class="w-4/6 flex flex-row justify-between">
+
+                                    <div class="home_team w-5/12">
+                                        <div class="inline-block align-middle  rounded-full  p-1">
+                                            <img src="/assets/images/athletico.png" alt="" class="w-4">
+                                        </div>
+                                        <span class="team_name ml-1 inline-block align-middle text-xs font-bold">Atletico Madrid</span>
+                                    </div>
+                                    <!-- Result -->
+                                    <div class="result  flex justify-center">
+                                        <span class="inline-block align-middle text-xs font-bold m-auto rounded-md border pl-4 pr-4 pt-1 pb-1">
+                                                2 : 4
+                                        </span>     
+                                    </div>
+                                    
+                                    <div class="away_team w-5/12 flex justify-end">
+                                        <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold">Villarreal</span>
+                                        <div class="inline-block align-middle  rounded-full  p-1">
+                                            <img src="/assets/images/villareal.png" alt="" class="w-4">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <!-- Stat -->
+                                <div class="statistics w-1/6 flex flex-row justify-end">
+                                    <div class="">
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="" alt="" class="">
+                                            <div class="font-bold mr-2  text-[#5f5f5f]">h2h</div>
+                                        </span>
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="/assets/images/statistics.png" alt="" class="w-3">
+                                        </span>
+                                    </div>
+                
+                                </div>
+
+                            </div>
+                            <!-- end item -->
+                            <!-- item 3-->
+                            <div class="league_games_item flex flex-row justify-between last:border-none last:pb-none pt-2">
+                                <!-- Tima & Star -->
+                                <div class="w-1/6 flex flex-row">           
+                                    <div class="home_team">
+                                        <span class="star inline-block align-middle">
+                                            <img src="/assets/images/star.svg" alt="" class="align-middle inline-block">
+                                        </span>
+                                        <span class="time ml-4 inline-block align-middle pt-1 text-xs font-bold text-lime-500">59'</span>
+                                    </div>
+                                </div>
+                                <!-- End Time & Star -->
+                                <!-- Teams -->
+                                <div class="w-4/6 flex flex-row justify-between">
+
+                                    <div class="home_team w-5/12">
+                                        <div class="inline-block align-middle  rounded-full p-1">
+                                            <img src="/assets/images/barselona.png" alt="" class="w-4">
+                                        </div>
+                                        <span class="team_name ml-1 inline-block align-middle text-xs font-bold">Valencia</span>
+                                    </div>
+                                    <!-- Result -->
+                                    <div class="result  flex justify-center">
+                                        <span class="inline-block align-middle text-xs font-bold m-auto rounded-md border pl-4 pr-4 pt-1 pb-1">
+                                                2 : 4
+                                        </span>     
+                                    </div>
+                                    
+                                    <div class="away_team w-5/12 flex justify-end">
+                                        <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold">Sevilla</span>
+                                        <div class="inline align-middle  rounded-full  p-1">
+                                            <img src="/assets/images/sevilia.png" alt="" class="w-4">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                
+                                <!-- Stat -->
+                                <div class="statistics w-1/6 flex flex-row justify-end">
+                                    <div class="">
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="" alt="" class="">
+                                            <div class="font-bold mr-2  text-[#5f5f5f]">h2h</div>
+                                        </span>
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="/assets/images/statistics.png" alt="" class="w-3">
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end item -->
+                        </div>
+                        <!-- end League Games -->
+                        
+                    </div>
+                    
+                    
+                    <div class="pl-4 pr-4 pb-4 pt-2 rounded-md">
+                        <!-- Cart League -->
+                        <div class="cart_league flex pl-2 pr-2 p-1 mb-2">
+                            <img src="/assets/images/england.png" alt="" class="w-6 mt-auto mb-auto rounded-full">
+                            <div class="cart_league__name ml-2 flex items-center">
+                                <div class="inline-block align-middle ml-2">
+                                    <span class="text-sm font-bold">
+                                        England:
+                                    </span>
+                                    <span class="text-sm font-semibold">Primier League</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Cart Leaugue -->
+                        <!-- league Games -->
+                        <div class="league_games_wrapper rounded-md p-2 border rounded-md">
+                            <!-- item 1-->
+                            <div class="flex flex-row justify-between pl-4 pr-2 pb-2 pt-2 bg-white hover:bg-gray-200">
+                                <!-- Tima & Star -->
+                                <div class="w-1/6 flex items-center">           
+                                    <div class="home_team">
+                                        <span class="star">
+                                            <img src="/assets/images/star.svg" alt="" class="inline-block">
+                                        </span>
+                                        <span class="time ml-4 text-xs font-bold text-lime-500">48'</span>
+                                    </div>
+                                </div>
+                                <!-- End Time & Star -->
+                                <!-- Teams -->
+                                <div class="w-4/6">
+                                     
+                                    <div class="">
+                                        <a href="">
+
+                                            <div class="away_team inline-block w-5/12 flex flex-row">
+                                                <div class="inline-block align-middle  rounded-full  p-1">
+                                                    <img src="/assets/images/barselona.png" alt="" class="w-4">
+                                                </div>
+                                                <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold font-bold">Barselona</span>
+                                            </div>          
+                                            
+                                            <div class="away_team inline-block w-5/12 flex flex-row">
+                                                <div class="inline-block align-middle  rounded-full  p-1">
+                                                    <img src="/assets/images/real.png" alt="" class="w-4">
+                                                </div>
+                                                <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold font-bold">Real Madrid</span>
+                                            </div>
+
+                                        </a>
+                                    </div>            
+                                        
+                                </div>
+                                <!-- End Team -->
+                                <!-- Result -->
+                                <div class="result  flex flex-col justify-center border rounded-md">
+                                    <span class="inline-block align-middle text-xs font-bold m-auto rounded-md  pl-4 pr-4 pt-1 pb-1">
+                                            3
+                                    </span>
+                                    <span class="inline-block align-middle text-xs font-bold m-auto rounded-md  pl-4 pr-4 pt-1 pb-1">
+                                            2
+                                    </span>     
+                                </div>
+                                <!-- Stat -->
+                                <div class="statistics w-1/6 flex flex-row justify-end">
+                                    <div class="flex flex-col mt-auto mb-auto">
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="" alt="" class="">
+                                            <div class="font-bold mr-2  text-[#5f5f5f]">h2h</div>
+                                        </span>
+                                        <span class="inline-block align-middle text-xs mt-2">
+                                            <img src="/assets/images/statistics.png" alt="" class="w-3">
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>                                          
+                            <!-- end item 1-->
+
+                            <!-- item 2-->
+                            <div class="flex flex-row justify-between pl-4 pr-2 pt-2 pb-2 border-t bg-white hover:bg-gray-200">
+                                <!-- Tima & Star -->
+                                <div class="w-1/6 flex items-center">           
+                                    <div class="home_team">
+                                        <span class="star">
+                                            <img src="/assets/images/star.svg" alt="" class="inline-block">
+                                        </span>
+                                        <span class="time ml-4 text-xs font-bold text-lime-500">48'</span>
+                                    </div>
+                                </div>
+                                <!-- End Time & Star -->
+                                <!-- Teams -->
+                                <div class="w-4/6">
+                                     
+                                    <div class="">
+                                        <a href="block flex flex-row justify-between">
+
+                                            <div class="away_team inline-block w-5/12 flex flex-row">
+                                                <div class="inline-block align-middle  rounded-full  p-1">
+                                                    <img src="/assets/images/barselona.png" alt="" class="w-4">
+                                                </div>
+                                                <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold font-bold">Barselona</span>
+                                            </div>          
+                                            
+                                            <div class="away_team inline-block w-5/12 flex flex-row">
+                                                <div class="inline-block align-middle  rounded-full  p-1">
+                                                    <img src="/assets/images/real.png" alt="" class="w-4">
+                                                </div>
+                                                <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold font-bold">Real Madrid</span>
+                                            </div>
+
+                                        </a>
+                                    </div>            
+                                        
+                                </div>
+                                <!-- End Team -->
+                                <!-- Result -->
+                                <div class="result  flex flex-col justify-center border rounded-md">
+                                    <span class="inline-block align-middle text-xs font-bold m-auto rounded-md  pl-4 pr-4 pt-1 pb-1">
+                                            3
+                                    </span>
+                                    <span class="inline-block align-middle text-xs font-bold m-auto rounded-md  pl-4 pr-4 pt-1 pb-1">
+                                            2
+                                    </span>     
+                                </div>
+                                <!-- Stat -->
+                                <div class="statistics w-1/6 flex flex-row justify-end">
+                                    <div class="flex flex-col mt-auto mb-auto">
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="" alt="" class="">
+                                            <div class="font-bold mr-2  text-[#5f5f5f]">h2h</div>
+                                        </span>
+                                        <span class="inline-block align-middle text-xs mt-2">
+                                            <img src="/assets/images/statistics.png" alt="" class="w-3">
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>                                          
+                            <!-- end item 2-->
+
+                            <!-- item 3-->
+                            <div class="flex flex-row justify-between pl-4 pr-2 pt-2 pb-2 border-t bg-white hover:bg-gray-200">
+                                <!-- Tima & Star -->
+                                <div class="w-1/6 flex items-center">           
+                                    <div class="home_team">
+                                        <span class="star">
+                                            <img src="/assets/images/star.svg" alt="" class="inline-block">
+                                        </span>
+                                        <span class="time ml-4 text-xs font-bold text-lime-500">48'</span>
+                                    </div>
+                                </div>
+                                <!-- End Time & Star -->
+                                <!-- Teams -->
+                                <div class="w-4/6">
+                                     
+                                    <div class="">
+                                        <a href="block flex flex-row justify-between">
+
+                                            <div class="away_team inline-block w-5/12 flex flex-row">
+                                                <div class="inline-block align-middle  rounded-full  p-1">
+                                                    <img src="/assets/images/barselona.png" alt="" class="w-4">
+                                                </div>
+                                                <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold font-bold">Barselona</span>
+                                            </div>          
+                                            
+                                            <div class="away_team inline-block w-5/12 flex flex-row">
+                                                <div class="inline-block align-middle  rounded-full  p-1">
+                                                    <img src="/assets/images/real.png" alt="" class="w-4">
+                                                </div>
+                                                <span class="team_name mr-2 inline-block mt-auto mb-auto text-xs font-bold font-bold">Real Madrid</span>
+                                            </div>
+
+                                        </a>
+                                    </div>            
+                                        
+                                </div>
+                                <!-- End Team -->
+                                <!-- Result -->
+                                <div class="result  flex flex-col justify-center border rounded-md">
+                                    <span class="inline-block align-middle text-xs font-bold m-auto rounded-md  pl-4 pr-4 pt-1 pb-1">
+                                            3
+                                    </span>
+                                    <span class="inline-block align-middle text-xs font-bold m-auto rounded-md  pl-4 pr-4 pt-1 pb-1">
+                                            2
+                                    </span>     
+                                </div>
+                                <!-- Stat -->
+                                <div class="statistics w-1/6 flex flex-row justify-end">
+                                    <div class="flex flex-col mt-auto mb-auto">
+                                        <span class="inline-block align-middle text-xs">
+                                            <img src="" alt="" class="">
+                                            <div class="font-bold mr-2  text-[#5f5f5f]">h2h</div>
+                                        </span>
+                                        <span class="inline-block align-middle text-xs mt-2">
+                                            <img src="/assets/images/statistics.png" alt="" class="w-3">
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>                                          
+                            <!-- end item 3-->
+                        </div>
+                        <!-- end League Games -->
+                    </div>
+
+                </div>
+                <!-- end Matches cart -->
+            </div>
+            <!-- End Main -->
+
+            <!-- Right Sidebar -->                
+            <div class="grid grid-rows-2 mt-1 flex flex-row items-start ">
+                    <!-- Predictions -->
+                  
+                    <div class="right_sidebar bg-white rounded-t-md">
+                       
+                        <div id="right_sidebar_header" class="flex p-4  rounded-t-md border-t border-b border-violet-200">
+
+                            <img src="/assets/images/spain.png" alt="" class="w-6 h-6 mt-auto mb-auto">
+
+                            <div class="cart_league__name ml-2">
+                                <div class="flex flex-row items-center">
+                                    <span class="text-sm font-bold mt-auto mr-auto">
+                                        Spain: 
+                                    </span>
+                                    <span class="text-sm font-bold mt-auto mr-auto ml-1">La Liga</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div id="right_sidebar_body" class="right_sedebar_header flex justify-between p-6">
+                            <div class="home_team mt-auto mb-auto">
+                                <img src="assets/images/barselona.png" alt="" class="w-10 h-10 ml-auto mr-auto">
+                                <span class="text-sm font-bold">Barselona</span>
+                            </div>
+                            <div class="result  flex flex-col justify-center">
+                                <span class="inline-block align-middle text-xs font-bold m-auto rounded-md border pl-3 pr-3 pt-1 pb-1">
+                                    22 : 00
+                                </span>   
+                                
+                            </div>
+                            <div class="home_team">
+                                <img src="assets/images/real.png" alt="" class="w-8 h-10 ml-auto mr-auto">
+                                <span class="text-sm font-bold">Real Madrid</span>
+                            </div>
+                        
+                        </div>
+
+                        <div class="prediction">
+                            <div class="flex flex-col">
+                                <div id="prediction_header" class="flex flex-row justify-between p-4  text-sm font-bold border-t border-b ">
+                                    
+                                    <span>Prediction</span>
+                                </div>
+                                <div id="prediction_body" class="w-full">
+                                    <div class="right_sedebar_header flex p-4">
+
+                                        <!-- <div class="home_team mt-auto mb-auto pt-1">
+                                            <img src="assets/images/barselona.png" alt="" class="w-10 h-10 ml-auto mr-auto">
+                                            <span class="text-sm font-bold">Barselona</span>
+                                        </div> -->
+                                        <div class="m-auto flex p-6">
+                                            <div class="result mt-auto mb-auto ">
+                                                <div class="flex flex-col 
+                                                inline-block bg-lime-500 
+                                                text-white align-middle 
+                                                text-xl font-bold 
+                                                m-auto rounded-md
+                                                border p-2"> 
+                                                    <span class="mr-auto ml-auto">
+                                                        1X
+                                                    </span>
+                                                    <span class="text-xs mr-auto ml-auto">
+                                                        win or draw
+                                                    </span>
+                                                </div>
+                                                   
+                                            </div>
+                                            <div class="home_team text-3xl mt-auto mb-auto p-2">   
+                                                <span class="font-bold">1.54</span>
+                                            </div>
+                                        </div>
+                                       
+
+                                    </div>
+                                </div>
+
+                                <div id="h2h" class="flex flex-col">
+                                    <div id="h2h_header" class="flex p-4 text-sm font-bold border-t border-b">
+                                        Head to head
+                                        <span class="ml-2"></span>
+                                    </div>
+
+                                    <div id="h2h_body" class="flex flex-col">
+                                        <div id="h2h_table" class="p-3">
+                                            <div class="item">
+                                                    <div class="flex text-xs mb-1 justify-between bg-gray-200 border-b">
+                                                        <div class="p-1 mt-auto mb-auto font-bold ">
+                                                            12-06-2020
+                                                        </div>
+                                                        <div class="p-1 flex">
+                                                            <!-- <img class="w-5 mr-1 border-2 rounded-full " src="/assets/images/uefa.png" alt="">  -->
+                                                            <span class="mt-auto mb-auto font-bold ">UEFA</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="flex flex-row justify-between w-full text-xs font-semibold  m-auto p-1">
+                
+                                                        <div class="w-2/6 mt-auto mb-auto">
+                                                            <div class="p-1 flex">
+                                                                <img src="/assets/images/barselona.png" alt="" class="w-4 h-4 inline-block mt-auto mb-auto">
+                                                                <span class="ml-1 mt-auto mb-auto">Barselona</span>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="flex w-2/6 justify-center">
+                                                            <div class="p-1">
+                                                                <span class="w-4 h-4 inline-block text-center align-middle bg-lime-500 rounded-md text-white">W</span>
+                                                            </div>
+                                                            <div class="m-auto pl-1 pr-1 border rounded-md">
+                                                                2 : 0
+                                                            </div>
+                                                            <div class="p-1">
+                                                                <span class="w-4 h-4 inline-block text-center align-middle bg-red-500 rounded-md text-white">L</span>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="flex w-2/6 f justify-end">
+                                                            <div class="p-1 flex">
+                                                                <span class="mr-2 mt-auto mb-auto">Real</span>
+                                                                <img src="/assets/images/real.png" alt="" class="w-4 h-5 inline-block mt-auto mb-auto">
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    </div>
+                                            </div>
+                                            
+                                            <div class="item">
+                                                    <div class="flex text-xs mb-1 justify-between bg-gray-200 border-b border-t">
+                                                        <div class="p-1 mt-auto mb-auto font-bold ">
+                                                            05-06-2021
+                                                        </div>
+                                                        <div class="p-1 flex">
+                                                            <!-- <img class="w-5 mr-1 border-2 rounded-full " src="/assets/images/Spain.png" alt="">  -->
+                                                            <span class="mt-auto mb-auto font-bold ">La Liga</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="flex flex-row justify-between w-full text-xs font-semibold  m-auto p-1">
+                
+                                                        <div class="w-2/6 mt-auto mb-auto">
+                                                            <div class="p-1 flex">
+                                                                <img src="/assets/images/barselona.png" alt="" class="w-4 h-4 inline-block mt-auto mb-auto">
+                                                                <span class="ml-1 mt-auto mb-auto">Barselona</span>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="flex w-2/6 justify-center">
+                                                            <div class="p-1">
+                                                                <span class="w-4 h-4 inline-block text-center align-middle bg-gray-400 rounded-md text-white">D</span>
+                                                            </div>
+                                                            <div class="m-auto pl-1 pr-1 border rounded-md">
+                                                                1 : 1
+                                                            </div>
+                                                            <div class="p-1">
+                                                                <span class="w-4 h-4 inline-block text-center align-middle bg-gray-400 rounded-md text-white">D</span>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="flex w-2/6 f justify-end">
+                                                            <div class="p-1 flex">
+                                                                <span class="mr-2 mt-auto mb-auto">Real</span>
+                                                                <img src="/assets/images/real.png" alt="" class="w-4 h-5 inline-block mt-auto mb-auto">
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    </div>
+                                            </div>
+    
+                                            <div class="item">
+                                                    <div class="flex text-xs mb-1 justify-between bg-gray-200 border-b border-t">
+                                                        <div class="p-1 mt-auto mb-auto font-bold ">
+                                                            23-11-2020
+                                                        </div>
+                                                        <div class="p-1 flex">
+                                                            <!-- <img class="w-5 mr-1 border-2 rounded-full " src="/assets/images/Spain.png" alt="">  -->
+                                                            <span class="mt-auto mb-auto font-bold ">La Liga</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="flex flex-row justify-between w-full text-xs font-semibold  m-auto p-1">
+                
+                                                        <div class="w-2/6 mt-auto mb-auto">
+                                                            <div class="p-1 flex">
+                                                                <img src="/assets/images/real.png" alt="" class="w-4 h-5 inline-block mt-auto mb-auto">
+                                                                <span class="ml-1 mt-auto mb-auto">Real</span>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="flex w-2/6 justify-center">
+                                                            <div class="p-1">
+                                                                <span class="w-4 h-4 inline-block text-center align-middle bg-red-500 rounded-md text-white">L</span>
+                                                            </div>
+                                                            <div class="m-auto pl-1 pr-1 border rounded-md">
+                                                                1 : 0
+                                                            </div>
+                                                            <div class="p-1">
+                                                                <span class="w-4 h-4 inline-block text-center align-middle bg-lime-500 rounded-md text-white">W</span>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="flex w-2/6 f justify-end">
+                                                            <div class="p-1 flex">
+                                                                <span class="mr-2 mt-auto mb-auto">Barselona</span>
+                                                                <img src="/assets/images/barselona.png" alt="" class="w-4 h-4 inline-block mt-auto mb-auto">
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Prediction -->
+                    <!-- Team Stat -->
+                    <div class="right_sidebar bg-white rounded-b-md">
+                        <div class="flex   border-b border-t p-4">
+                           
+                            <div class="cart_league__name">
+                                <div class="mt-auto mr-auto">
+                                    <span class="text-sm font-bold mt-auto mr-auto"> 
+                                        
+                                    </span>
+                                    <span class="text-sm font-bold mt-auto mr-auto">Standings</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col">
+                                <div class="flex flex-row w-full text-xs font-semibold p-4 ml-auto mr-auto">
+                                    <div class="place flex flex-col">
+                                        <!-- 1 -->
+                                        <div class="border-t border-l p-2 text-center bg-gray-100">
+                                            PL
+                                        </div>
+                                        <div class="border-t border-l p-2 text-center">
+                                            1
+                                        </div>
+                                        <div class="border-b border-t border-l p-2 text-center">
+                                            5
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="place flex flex-col">
+                                        <div class="border-t border-l p-2 bg-gray-100">
+                                            TEAM
+                                        </div>
+                                        <div class="border-t border-l p-2">
+                                            Barselona
+                                        </div>
+                                        <div class="border-b border-t border-l p-2">
+                                            Real
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="place flex flex-col">
+                                        <div class="border-t border-l p-2 text-center bg-gray-100">
+                                            G
+                                        </div>
+                                        <div class=" border-t border-l p-2 text-center">
+                                           40
+                                        </div>
+                                        <div class="border-b border-t border-l p-2 text-center">
+                                            39
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="place flex flex-col">
+                                        <div class="border-t border-l p-2 text-center bg-gray-100">
+                                            W
+                                        </div>
+                                        <div class=" border-t border-l p-2 text-center">
+                                           14
+                                        </div>
+                                        <div class="border-b border-t border-l p-2 text-center">
+                                            13
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="place flex flex-col">
+                                        <div class="border-t border-l p-2 text-center bg-gray-100">
+                                            D
+                                        </div>
+                                        <div class=" border-t border-l p-2 text-center">
+                                           8
+                                        </div>
+                                        <div class="border-b border-t border-l p-2 text-center">
+                                            7
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="place flex flex-col">
+                                        <div class="border-t border-l p-2 text-center bg-gray-100">
+                                            L
+                                        </div>
+                                        <div class=" border-t border-l p-2 text-center">
+                                           5
+                                        </div>
+                                        <div class="border-b border-t border-l p-2 text-center">
+                                            7
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="place flex flex-col">
+                                        <div class="border-t border-l border-r p-2 text-center bg-gray-100">
+                                            PTS
+                                        </div>
+                                        <div class=" border-t border-l border-r p-2 text-center">
+                                           63
+                                        </div>
+                                        <div class="border-b border-t border-l border-r p-2 text-center">
+                                            57
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team Stat -->
+                
+            </div>
+            <!-- End Right Sidebar -->
+            
+        </div>
+        
+       
+    </main>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
